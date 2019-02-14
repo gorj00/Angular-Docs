@@ -2,7 +2,9 @@
 
 ## Javascript Object Literals
 <pre>
+```javascript
 variable = {type: server, name: 'John'}
+...
 </pre>
 
 
