@@ -1,9 +1,15 @@
-# Angular 7 Cheat Sheet
+# Angular 7+ Cheat Sheet
 
-## Javascript Object Literals
+## Components Databinding
+### Binding to Custom Properties
+- Property with assign type as a javascript object
+```typescript
+element: {type: string, name: string: content: string};
+```
+### Javascript Object Literals
 
 ```javascript
-var variable = {type: 'server' name: 'John'}
+let variable = {type: 'server' name: 'John'}
 ```
 
 
