@@ -46,15 +46,17 @@ onServerAdded(serverData: {serverName: string, serverContent: string}) {
 ```html
 <app-cockpit (serverCreated)="onServerAdded($event)"></app-cockpit>
 ```
-**3.** **DEFINING EVENT EMITTER:** In child component **.ts file**, define new property informing about the event by assigning to it **new EventEmitter<_define type of event data_>()** (a generic type) with a constructor **()** at the end and import **EventEmitter** from Angular core at the beginning of the file:
+**3.** **DEFINING EVENT EMITTER:** In child component **.ts file**, define new property informing about the event by assigning to it **new EventEmitter<_define type of event data_>()** (a generic type) with a constructor **()** at the end and import **EventEmitter** from Angular core at the beginning of the file. 
+
+Also, add decorator **@Output()** (don't forget the braces) before property name and import **Output** (without braces) from Angular core at the beginning of the file:
 ```typescript
-import { Component, OnInit, EventEmitter } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 // more TypeScript code
 
 serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 ```
-**4.** **CALLING EVENT EMITTER:** In child component **.ts file**, in a method call and emit the property with emitter with contracted current (by using **this**) parameters:
+**4.** **CALLING EVENT EMITTER:** In child component **.ts file**, in a method, call and emit the property with emitter with contracted current (by using **this**) parameters:
 ```typescript
 // When creating new server
 onAddServer {
