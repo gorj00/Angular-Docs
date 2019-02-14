@@ -14,20 +14,23 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Input() element: {type: string, name: string, content: string};
 ```
-**1.b. step** _(optiona)l_  
+**1.b. step** _(optional)_  
   - Assign **ALIAS**: Add alias name inside braces:
 ```typescript
 @Input('srvElement') element: {type: string, name: string, content: string};
 ```
-**2.** In parent component **.ts file**, assign values to Javascript object literal:
+**2. step** 
+  - In parent component **.ts file**, assign values to Javascript object literal:
 ```typescript
 serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```
-**3a.** In parent component **.html file**, bind the property to HTML element:
+**3a. step** 
+  - In parent component **.html file**, bind the property to HTML element:
 ```html
 <app-server-element [element]="serverElement"></app-server-element>
 ```
-**3b.** _Optional_ With alias:
+**3b.** _(optional)_ 
+  - With alias:
 ```html
 <app-server-element [element]="srvElement"></app-server-element>
 ```
