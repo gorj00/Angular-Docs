@@ -11,7 +11,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Input() element: {type: string, name: string, content: string};
 ```
-**1b.** **Assign ALIAS:** Add alias name inside braces:
+**1b.** _Optional_**Assign ALIAS:** Add alias name inside braces:
 ```typescript
 @Input('srvElement') element: {type: string, name: string, content: string};
 ```
@@ -23,7 +23,7 @@ serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```html
 <app-server-element [element]="serverElement"></app-server-element>
 ```
-**3b.** With alias:
+**3b.** _Optional_ With alias:
 ```html
 <app-server-element [element]="srvElement"></app-server-element>
 ```
@@ -42,11 +42,15 @@ onServerAdded(serverData: {serverName: string, serverContent: string}) {
     });
 }
 ```
-**2.** In parent component **.html file**, bind the event to HTML element:
+**2a.** In parent component **.html file**, bind the event to HTML element:
 ```html
 <app-cockpit (serverCreated)="onServerAdded($event)"></app-cockpit>
 ```
-**3.** **DEFINING EVENT EMITTER:** In child component **.ts file**, define new property informing about the event by assigning to it **new EventEmitter<_define type of event data_>()** (a generic type) with a constructor **()** at the end and import **EventEmitter** from Angular core at the beginning of the file. 
+**2b.**  _Optional_ With alias:
+```html
+<app-cockpit (srvCreated)="onServerAdded($event)"></app-cockpit>
+```
+**3a.** **DEFINING EVENT EMITTER:** In child component **.ts file**, define new property informing about the event by assigning to it **new EventEmitter<_define type of event data_>()** (a generic type) with a constructor **()** at the end and import **EventEmitter** from Angular core at the beginning of the file. 
 
 Also, add decorator **@Output()** (don't forget the braces) before property name and import **Output** (without braces) from Angular core at the beginning of the file:
 ```typescript
@@ -54,7 +58,11 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 // more TypeScript code
 
-serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+@Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+```
+**3b.** _Optional_ **Assign ALIAS:** Add alias name inside braces:
+```typescript
+@Output('srvCreated') serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 ```
 **4.** **CALLING EVENT EMITTER:** In child component **.ts file**, in a method, call and emit the property with emitter with contracted current (by using **this**) parameters:
 ```typescript
