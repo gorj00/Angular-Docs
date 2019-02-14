@@ -14,7 +14,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Input() element: {type: string, name: string, content: string};
 ```
  
-  - Assign **ALIAS**: Add alias name inside braces:
+  - _Optional_: Assign **ALIAS**: Add alias name inside braces:
 ```typescript
 @Input('srvElement') element: {type: string, name: string, content: string};
 ```
@@ -29,7 +29,7 @@ serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 <app-server-element [element]="serverElement"></app-server-element>
 ```
 
-  - _(optional)_: With alias:
+  - _Optional_: With alias:
 ```html
 <app-server-element [element]="srvElement"></app-server-element>
 ```
