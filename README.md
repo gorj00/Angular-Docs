@@ -2,10 +2,12 @@
 
 ## Components Databinding
 ### Binding to Custom Properties
-- Property with assigned type as a javascript object
+#### Component Accessed by PARENT
+- Property with assigned type as a javascript object:
 ```typescript
 element: {type: string, name: string, content: string};
 ```
+
 ### Javascript Object Literals
 
 ```javascript
