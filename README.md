@@ -27,6 +27,7 @@ serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```html
 <app-server-element [element]="srvElement"></app-server-element>
 ```
+
 #### Component Informed by CHILD Component
 We want to "listen" to some events, for example, we want to inform parent component that new servers were created. 
 **1.** In parent component **.ts file**, define function(s):
