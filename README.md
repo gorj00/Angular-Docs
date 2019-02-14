@@ -3,21 +3,29 @@
 ## Components Databinding
 ### Binding to Custom Properties
 #### Component Accessed by PARENT Component
-**1.** In child component **.ts file**, define property with assigned type as a javascript object (or any other type), add decorator **@Input()** (don't forget the braces) before property name, and import **Input** (without braces) from Angular core at the beginning of the file:
+**1a.** In child component **.ts file**, define property with assigned type as a javascript object (or any other type), add decorator **@Input()** (don't forget the braces) before property name, and import **Input** (without braces) from Angular core at the beginning of the file:
 ```typescript
 import { Component, OnInit, Input } from '@angular/core';
 
 // more TypeScript code
 
-element: {type: string, name: string, content: string};
+@Input() element: {type: string, name: string, content: string};
+```
+**1B.** **Assign ALIAS:** Add alias name inside braces:
+```typescript
+@Input('srvElement') element: {type: string, name: string, content: string};
 ```
 **2.** In parent component **.ts file**, assign values to Javascript object literal:
 ```typescript
 serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```
-**3.** In parent component **.html file**, bind the property to HTML element.
+**3a.** In parent component **.html file**, bind the property to HTML element:
 ```html
 <app-server-element [element]="serverElement"></app-server-element>
+```
+**3a.** With alias:
+```html
+<app-server-element [element]="srvElement"></app-server-element>
 ```
 
 
