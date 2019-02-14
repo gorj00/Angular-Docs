@@ -3,7 +3,7 @@
 ## # Components Databinding
 ### ## Binding to Custom Properties
 #### Component Informed by PARENT Component
-**1a. step** 
+**1.a. step** 
   - In child component **.ts file**, define property with assigned type as a javascript object (or any other type), 
   - add decorator **@Input()** (don't forget the braces) before property name, 
   - import **Input** (without braces) from Angular core at the beginning of the file.
@@ -14,7 +14,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Input() element: {type: string, name: string, content: string};
 ```
-**1b. step** _Optional_ 
+**1.b. step** _Optional_ 
 	- **Assign ALIAS:** Add alias name inside braces:
 ```typescript
 @Input('srvElement') element: {type: string, name: string, content: string};
