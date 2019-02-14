@@ -24,12 +24,12 @@ import { Component, OnInit, Input } from '@angular/core';
 ```typescript
 serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```
-**3a. step** 
+**3.a. step** 
   - In parent component **.html file**, bind the property to HTML element:
 ```html
 <app-server-element [element]="serverElement"></app-server-element>
 ```
-**3b.** _(optional)_ 
+**3.b. step** _(optional)_ 
   - With alias:
 ```html
 <app-server-element [element]="srvElement"></app-server-element>
@@ -40,7 +40,8 @@ serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 #### Component Informed by CHILD Component
 We want to "listen" to some events, for example, we want to inform parent component that new server was created. 
 
-**1.** In parent component **.ts file**, define function(s):
+**1. step** 
+  - In parent component **.ts file**, define function(s):
 ```typescript
 // After we've clicked and new server was added
 onServerAdded(serverData: {serverName: string, serverContent: string}) {
@@ -51,17 +52,21 @@ onServerAdded(serverData: {serverName: string, serverContent: string}) {
     });
 }
 ```
-**2a.** In parent component **.html file**, bind the event to HTML element:
+**2.a. step** 
+  - In parent component **.html file**, bind the event to HTML element:
 ```html
 <app-cockpit (serverCreated)="onServerAdded($event)"></app-cockpit>
 ```
-**2b.**  _Optional_ With alias (name of alias from _3b_):
+**2.b. step**  _(ptional)_ 
+  - With alias (name of alias from _3.b._):
 ```html
 <app-cockpit (srvCreated)="onServerAdded($event)"></app-cockpit>
 ```
-**3a.** **DEFINING EVENT EMITTER:** In child component **.ts file**, define new property informing about the event by assigning to it **new EventEmitter<_define type of event data_>()** (a generic type) with a constructor **()** at the end and import **EventEmitter** from Angular core at the beginning of the file. 
-
-Also, add decorator **@Output()** (don't forget the braces) before property name and import **Output** (without braces) from Angular core at the beginning of the file:
+**3.a. step** 
+  - Defigning **EVENT EMITTER:** In child component **.ts file**, define new property informing about the event by assigning to it **new EventEmitter<_define type of event data_>()** (a generic type) with a constructor **()** at the end,
+  - import **EventEmitter** from Angular core at the beginning of the file. 
+  - add decorator **@Output()** (don't forget the braces) before property name, 
+  - import **Output** (without braces) from Angular core at the beginning of the file:
 ```typescript
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
@@ -69,11 +74,14 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 ```
-**3b.** _Optional_ **Assign ALIAS:** Add alias name inside braces:
+**3.b. step** _(optional)_ 
+  - Assign **ALIAS:** Add alias name inside braces:
 ```typescript
 @Output('srvCreated') serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 ```
-**4.** **CALLING EVENT EMITTER:** In child component **.ts file**, in a method, call and emit the property with emitter with contracted current values of parameters (by using **this**):
+**4. step** 
+  - Calling **EVENT EMITTER:** In child component **.ts file**, in a method, call and emit the property with emitter with **.emit()**,
+  - put inside contracted current values of parameters (by using **this**):
 ```typescript
 // When creating new server
 onAddServer {
