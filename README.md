@@ -7,11 +7,9 @@
 ```typescript
 element: {type: string, name: string, content: string};
 ```
-
-### Javascript Object Literals
-
-```javascript
-let variable = {type: 'server' name: 'John'}
+- In parent component, assign values to Javascript object literal:
+```typescript
+serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```
 
 
