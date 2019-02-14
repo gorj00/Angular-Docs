@@ -34,13 +34,17 @@ We want to "listen" to some events, for example, we want to inform parent compon
 **1.** In parent component **.ts file**, define function(s):
 ```typescript
 // After we've clicked and new server was added
-onServerAdded() {
+onServerAdded(serverData: {serverName: string, serverContent: string}) {
 	this.serverElements.push({
     	type: 'server',
-      	name: this.newServerName;
-      	content: this.newServerContent
+      	name: serverData.serverName,
+      	content: serverData.serverContent
     });
 }
+```
+**2.** In parent component **.html file**, bind the event to HTML element:
+```html
+<app-cockpit (serverCreated)="onServerAdded($event)"></app-cockpit>
 ```
 
 
