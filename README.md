@@ -46,7 +46,7 @@ onServerAdded(serverData: {serverName: string, serverContent: string}) {
 ```html
 <app-cockpit (serverCreated)="onServerAdded($event)"></app-cockpit>
 ```
-**2b.**  _Optional_ With alias:
+**2b.**  _Optional_ With alias (name of alias from _3b_):
 ```html
 <app-cockpit (srvCreated)="onServerAdded($event)"></app-cockpit>
 ```
