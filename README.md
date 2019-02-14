@@ -64,7 +64,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 ```typescript
 @Output('srvCreated') serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 ```
-**4.** **CALLING EVENT EMITTER:** In child component **.ts file**, in a method, call and emit the property with emitter with contracted current (by using **this**) parameters:
+**4.** **CALLING EVENT EMITTER:** In child component **.ts file**, in a method, call and emit the property with emitter with contracted current values of parameters (by using **this**):
 ```typescript
 // When creating new server
 onAddServer {
