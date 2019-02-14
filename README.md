@@ -14,8 +14,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Input() element: {type: string, name: string, content: string};
 ```
-**1.b. step** _Optional_  
-  - Assign ALIAS: Add alias name inside braces:
+**1.b. step** _(optiona)l_  
+  - Assign **ALIAS**: Add alias name inside braces:
 ```typescript
 @Input('srvElement') element: {type: string, name: string, content: string};
 ```
