@@ -28,6 +28,7 @@ serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 <app-server-element [element]="srvElement"></app-server-element>
 ```
 
+
 ### ## Binding to Custom Events
 #### Component Informed by CHILD Component
 We want to "listen" to some events, for example, we want to inform parent component that new server was created. 
