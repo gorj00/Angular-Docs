@@ -4,7 +4,7 @@
 ### Binding to Custom Properties
 - Property with assign type as a javascript object
 ```typescript
-element: {type: string, name: string: content: string};
+element: {type: string, name: string, content: string};
 ```
 ### Javascript Object Literals
 
