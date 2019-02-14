@@ -3,7 +3,7 @@
 ## Components Databinding
 ### Binding to Custom Properties
 #### Component Accessed by PARENT
-**1.** Property with assigned type as a javascript object:
+**1.** In child component **.ts file**, define property with assigned type as a javascript object (or any other type):
 ```typescript
 element: {type: string, name: string, content: string};
 ```
@@ -11,9 +11,9 @@ element: {type: string, name: string, content: string};
 ```typescript
 serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```
-**3.** In parent component **.html file**, assign values to Javascript object literal:
-```typescript
-serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
+**3.** In parent component **.html file**, bind the property to HTML element.
+```html
+<app-server-element [element]="serverElement"></app-server-element>
 ```
 
 
