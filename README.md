@@ -5,7 +5,7 @@
 #### Component Accessed by PARENT Component
 **1.** In child component **.ts file**, define property with assigned type as a javascript object (or any other type), add decorator @Input() before property name, and import **Input** from Angular core at the beginning of the file:
 ```typescript
-import { Component, OnInit, **Input** } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 // more TypeScript code
 
