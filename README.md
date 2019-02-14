@@ -29,9 +29,11 @@ serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```
 
 #### Component Informed by CHILD Component
-We want to "listen" to some events, for example, we want to inform parent component that new servers were created. 
+We want to "listen" to some events, for example, we want to inform parent component that new server was created. 
+
 **1.** In parent component **.ts file**, define function(s):
 ```typescript
+// After we've clicked and new server was added
 onServerAdded() {
 	this.serverElements.push({
     	type: 'server',
