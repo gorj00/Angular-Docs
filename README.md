@@ -29,7 +29,7 @@ serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 <app-server-element [element]="serverElement"></app-server-element>
 ```
 
-  - _Optional_: With alias:
+  - _Optional_: If alias added, bind the property to HTML element using the alias:
 ```html
 <app-server-element [element]="srvElement"></app-server-element>
 ```
