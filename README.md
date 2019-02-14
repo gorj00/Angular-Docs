@@ -3,7 +3,7 @@
 ## Javascript Object Literals
 
 ```javascript
-let variable = {type: 'server' name: 'John'}
+var variable = {type: 'server' name: 'John'}
 ```
 
 
