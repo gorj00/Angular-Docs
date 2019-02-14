@@ -3,7 +3,8 @@
 ## # Components Databinding
 ### ## Binding to Custom Properties
 #### Component Informed by PARENT Component
-**1a.** In child component **.ts file**, define property with assigned type as a javascript object (or any other type), add decorator **@Input()** (don't forget the braces) before property name, and import **Input** (without braces) from Angular core at the beginning of the file.
+- In child component **.ts file**, 
+- define property with assigned type as a javascript object (or any other type), add decorator **@Input()** (don't forget the braces) before property name, and import **Input** (without braces) from Angular core at the beginning of the file.
 ```typescript
 import { Component, OnInit, Input } from '@angular/core';
 
