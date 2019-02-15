@@ -91,11 +91,49 @@ onAddServer() {
 ```
 
 ## # View Encapsulation
-Styles are applicable only isnide the concrete components by default. Meaning, styles defined in parent component **.css file** will not affect the style of a child component.  
+Styles are applicable only isnide the concrete components by default. Meaning, styles defined in component **.css file** will not affect the style of other components.  
 
 It is due to Angular generating unique properties **_ngcontent-ejo-x** to HTML elements belonging to the concrete component.
 
 - Example: 
 ```html
 <div _ngcontent-ejo-0 class="row"></div>
+```
+
+### ## Overwriting Style Encapsulation
+It is possible to overwrite these default styles encapsulation settings. 
+
+**1. step** 
+  - In the component **.ts file**, import **ViewEncapsulation** from Angular core.
+```typescript
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+```
+
+**2. step** 
+  - Add **encapsulation** property to the **@Component** decorator, possible values of this property are: _ViewEncapsulation.None_, _ViewEncapsulation.Native_, _and _ViewEncapsulation.Emulated_.
+  
+**2.a. ViewEncapsulation.None**
+**None** turns off the styles encapsulation and doesn't generate ***_ngcontent-ejo-x** properties to the component HTML elements. Therefore, the styles are now applied globally.
+```typescript
+@Component({
+  // Other compononet properties
+  encapsulation: ViewEncapsulation.None;
+})
+```
+
+**2.b. ViewEncapsulation.Native**
+**Native** uses Shadow DOM technology, similar behavior, only not supported by all the browsers, not recommended using.
+```typescript
+@Component({
+  // Other compononet properties
+  encapsulation: ViewEncapsulation.Native;
+})
+```
+**2.c. ViewEncapsulation.Emulated**
+**Emulated** encapsulates the style and, therefore, not necessary to define because it is set as default.
+```typescript
+@Component({
+  // Other compononet properties
+  encapsulation: ViewEncapsulation.Emulated;
+})
 ```
