@@ -122,7 +122,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```
 
 **2.b. ViewEncapsulation.Native**
-- **Native** uses Shadow DOM technology, similar behavior, only not supported by all the browsers, not recommended using.
+- **Native** uses Shadow DOM technology, similar behavior to default encapsulation, only not supported by all the browsers, not recommended using.
 ```typescript
 @Component({
   // Other compononet properties
