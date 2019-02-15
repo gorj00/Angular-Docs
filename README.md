@@ -137,3 +137,9 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated
 })
 ```
+
+## # Local Reference in Templates
+Alternative to **two-way-binding** to get a **value** of HTML element (for example, user's input)
+- local reference can be placed on HTML element
+- local reference holds reference on the whole HTML element, its properties included
+- local reference can be used in any template **.html file**, never in any .ts file
