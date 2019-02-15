@@ -89,3 +89,13 @@ onAddServer() {
   this.serverCreated.emit({serverName: this.serverName, serverContent: this.serverContent});
 }
 ```
+
+## # View Encapsulation
+Styles are applicable only isnide the concrete components by default. Meaning, styles defined in parent component **.css file** will not affect the style of a child component.  
+
+It is due to Angular generating unique properties _(_ngcontent-ejo-x)_ to HTML elements belonging to the concrete component.
+
+- Example: 
+```html
+<div _ngcontent-ejo-0 class="row"></div>
+```
