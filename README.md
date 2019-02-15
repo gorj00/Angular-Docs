@@ -87,5 +87,4 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 onAddServer() {
   this.serverCreated.emit({serverName: this.serverName, serverContent: this.serverContent});
 }
-
 ```
