@@ -15,23 +15,26 @@ import { Component, OnInit, Input } from '@angular/core';
 @Input() element: {type: string, name: string, content: string};
 ```
 
- **1.b. step** _(optional)_
+**1.b. step** _(optional)_
   - Assign **ALIAS**: Add alias name inside braces:
 ```typescript
 @Input('srvElement') element: {type: string, name: string, content: string};
 ```
 
+**2. step** 
   - In parent component **.ts file**, assign values to Javascript object literal:
 ```typescript
 serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```
 
+**3.a. step** 
   - In parent component **.html file**, bind the property to HTML element:
 ```html
 <app-server-element [element]="serverElement"></app-server-element>
 ```
 
-  - _Optional_: If alias added, bind the property to HTML element using the alias:
+**3.b. step** _(optional)_ 
+  - If alias added in 1.b., bind the property to HTML element using the alias:
 ```html
 <app-server-element [element]="srvElement"></app-server-element>
 ```
@@ -58,11 +61,13 @@ onServerAdded(serverData: {serverName: string, serverContent: string}) {
 ```html
 <app-cockpit (serverCreated)="onServerAdded($event)"></app-cockpit>
 ```
+
 **2.b. step**  _(ptional)_ 
   - With alias (name of alias from _3.b._):
 ```html
 <app-cockpit (srvCreated)="onServerAdded($event)"></app-cockpit>
 ```
+
 **3.a. step** 
   - Defigning **EVENT EMITTER:** In child component **.ts file**, define new property informing about the event by assigning to it **new EventEmitter<_define type of event data_>()** (a generic type) with a constructor **()** at the end,
   - import **EventEmitter** from Angular core at the beginning of the file. 
@@ -75,11 +80,13 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 ```
+
 **3.b. step** _(optional)_ 
   - Assign **ALIAS:** Add alias name inside braces:
 ```typescript
 @Output('srvCreated') serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 ```
+
 **4. step** 
   - Calling **EVENT EMITTER:** In child component **.ts file**, in a method, call and emit the property with emitter with **.emit()**,
   - put inside contracted current values of parameters (by using **this**):
