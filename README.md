@@ -1,6 +1,7 @@
 # Angular 7+ Cheat Sheet
 
 ## # Components Databinding (Communication)
+Binding to custom properties and biding to custom events is suitable for input and output, for more complex component communcation use **_services_**.
 ### ## Binding to Custom Properties
 #### Component Informed by PARENT Component
 **1.a. step** 
