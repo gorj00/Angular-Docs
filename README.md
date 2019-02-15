@@ -84,7 +84,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   - put inside contracted current values of parameters (by using **this**):
 ```typescript
 // When creating new server
-onAddServer {
+onAddServer() {
   this.serverCreated.emit({serverName: this.serverName, serverContent: this.serverContent});
 }
 
