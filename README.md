@@ -104,7 +104,7 @@ It is due to Angular generating unique properties **_ngcontent-ejo-x** to HTML e
 It is possible to overwrite these default styles encapsulation settings. 
 
 **1. step** 
-  - In the component **.ts file**, import **ViewEncapsulation** from Angular core.
+  - In the component **.ts file**, import **ViewEncapsulation** from Angular core:
 ```typescript
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```
@@ -113,7 +113,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
   - Add **encapsulation** property to the **@Component** decorator, possible values of this property are: _ViewEncapsulation.None_, _ViewEncapsulation.Native_, and _ViewEncapsulation.Emulated_.
   
 **2.a. ViewEncapsulation.None**
-- **None** turns off the styles encapsulation and doesn't generate **_ngcontent-ejo-x** properties to the component HTML elements. Therefore, the styles are now applied globally.
+- **None** turns off the styles encapsulation and doesn't generate **_ngcontent-ejo-x** properties to the component HTML elements. Therefore, the styles are now applied globally:
 ```typescript
 @Component({
   // Other compononet properties
@@ -122,7 +122,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```
 
 **2.b. ViewEncapsulation.Native**
-- **Native** uses Shadow DOM technology, similar behavior to default encapsulation, only not supported by all the browsers, not recommended using.
+- **Native** uses Shadow DOM technology, similar behavior to default encapsulation, only not supported by all the browsers, not recommended using:
 ```typescript
 @Component({
   // Other compononet properties
@@ -130,7 +130,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 ```
 **2.c. ViewEncapsulation.Emulated**
-- **Emulated** encapsulates the style and, therefore, not necessary to define because it is set as default.
+- **Emulated** encapsulates the style and, therefore, not necessary to define because it is set as default:
 ```typescript
 @Component({
   // Other compononet properties
@@ -145,13 +145,31 @@ Alternative to **two-way-binding** to get a **value** of HTML element (for examp
 - local reference can be used everywhere in the template **.html file**, never in .ts file
 
 **1. step**
-  - In **.html file**, add local reference to HTML element with **#** _hashtag_
+  - In **.html file**, add local reference to HTML element with **#** _hashtag_:
 ```html
 <input type="text" #try>
 ```
 
 **2. step**
-  - Pass the local reference as **an argument** to **event method** in the template
+  - Pass the local reference as **an argument** to **event method** in the template:
 ```html
   <button (click)="onClickTry(try)">Click me</button>
+```
+
+**3.a. step**
+  - In **.ts file**, receive the HTML element (and define its type as such) in your method,
+  - name the parameter of the method **differently** than the local reference in your template:
+```typescript
+  onClickTry(tryReference: HTMLElement) {
+    console.log(tryReference);
+  }
+```
+
+**3.b. step**
+  - If the HTML element referenced has a value (such as input), redefine the type of the parameter (since HTMLElement alone does not have a _value_ property) and use **HTMLInputElement** instead (or any other suitable type with a _value_ property),
+  - call the value with **.value**:
+```typescript
+onClickTry(tryReference: HTMLInputElement) {
+    console.log(tryReference.value);
+  }
 ```
