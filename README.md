@@ -143,12 +143,12 @@ Get the whole HTML element from template.
 
 Can be used as an alternative to **two-way-binding** to get a **value** of HTML element (for example user's input).
 
-- local reference can be placed on HTML element
-- local reference holds reference on the **whole HTML element** with its **properties** and **value**
-- local reference can be used everywhere in the template **.html file**, never in .ts file
+- local reference can be placed on any HTML element,
+- local reference holds reference on the **whole HTML element** with its **properties** and **value**,
+- local reference can be used everywhere in the template **.html file**, never in .ts file.
 
 **1. step**
-  - In **.html file**, add local reference to HTML element with **#** _hashtag_:
+  - In **.html file**, add local reference to HTML element with **#** _(hashtag)_:
 ```html
 <input type="text" #try>
 ```
