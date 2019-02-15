@@ -1,6 +1,6 @@
 # Angular 7+ Cheat Sheet
 
-## # Components Databinding
+## # Components Databinding (Communication)
 ### ## Binding to Custom Properties
 #### Component Informed by PARENT Component
 **1.a. step** 
