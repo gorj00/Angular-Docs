@@ -139,7 +139,18 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```
 
 ## # Local Reference in Templates
-Alternative to **two-way-binding** to get a **value** of HTML element (for example, user's input)
+Alternative to **two-way-binding** to get a **value** of HTML element (for example user's input).
 - local reference can be placed on HTML element
-- local reference holds reference on the whole HTML element, its properties included
-- local reference can be used in any template **.html file**, never in any .ts file
+- local reference holds reference on the **whole HTML element** with its **properties** and **value**
+- local reference can be used everywhere in the template **.html file**, never in .ts file
+**1. step**
+  - In **.html file**, add local reference to HTML element with **#** _hashtag_
+```html
+<input type="text" #try>
+```
+
+**2. step**
+  - Pass the local reference as **an argument** to **event method** in the template
+```html
+  <button (click)="onClickTry(try)">Click me</button>
+```
