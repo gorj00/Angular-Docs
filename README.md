@@ -110,7 +110,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```
 
 **2. step** 
-  - Add **encapsulation** property to the **@Component** decorator, possible values of this property are: _ViewEncapsulation.None_, _ViewEncapsulation.Native_, _and _ViewEncapsulation.Emulated_.
+  - Add **encapsulation** property to the **@Component** decorator, possible values of this property are: _ViewEncapsulation.None_, _ViewEncapsulation.Native_, and _ViewEncapsulation.Emulated_.
   
 **2.a. ViewEncapsulation.None**
 - **None** turns off the styles encapsulation and doesn't generate ***_ngcontent-ejo-x** properties to the component HTML elements. Therefore, the styles are now applied globally.
