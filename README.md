@@ -6,7 +6,7 @@
 **1.a. step** 
   - In child component **.ts file**, define property with assigned type as a javascript object (or any other type), 
   - add decorator **@Input()** (don't forget the braces) before property name, 
-  - import **Input** (without braces) from Angular core at the beginning of the file.
+  - import **Input** (without braces) from Angular core at the beginning of the file:
 ```typescript
 import { Component, OnInit, Input } from '@angular/core';
 
