@@ -117,7 +117,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```typescript
 @Component({
   // Other compononet properties
-  encapsulation: ViewEncapsulation.None;
+  encapsulation: ViewEncapsulation.None
 })
 ```
 
@@ -126,7 +126,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```typescript
 @Component({
   // Other compononet properties
-  encapsulation: ViewEncapsulation.Native;
+  encapsulation: ViewEncapsulation.Native
 })
 ```
 **2.c. ViewEncapsulation.Emulated**
@@ -134,6 +134,6 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```typescript
 @Component({
   // Other compononet properties
-  encapsulation: ViewEncapsulation.Emulated;
+  encapsulation: ViewEncapsulation.Emulated
 })
 ```
