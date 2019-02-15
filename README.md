@@ -93,7 +93,7 @@ onAddServer() {
 ## # View Encapsulation
 Styles are applicable only isnide the concrete components by default. Meaning, styles defined in parent component **.css file** will not affect the style of a child component.  
 
-It is due to Angular generating unique properties (_ngcontent-ejo-x) to HTML elements belonging to the concrete component.
+It is due to Angular generating unique properties **_ngcontent-ejo-x** to HTML elements belonging to the concrete component.
 
 - Example: 
 ```html
