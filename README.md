@@ -113,7 +113,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
   - Add **encapsulation** property to the **@Component** decorator, possible values of this property are: _ViewEncapsulation.None_, _ViewEncapsulation.Native_, _and _ViewEncapsulation.Emulated_.
   
 **2.a. ViewEncapsulation.None**
-**None** turns off the styles encapsulation and doesn't generate ***_ngcontent-ejo-x** properties to the component HTML elements. Therefore, the styles are now applied globally.
+- **None** turns off the styles encapsulation and doesn't generate ***_ngcontent-ejo-x** properties to the component HTML elements. Therefore, the styles are now applied globally.
 ```typescript
 @Component({
   // Other compononet properties
@@ -122,7 +122,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 ```
 
 **2.b. ViewEncapsulation.Native**
-**Native** uses Shadow DOM technology, similar behavior, only not supported by all the browsers, not recommended using.
+- **Native** uses Shadow DOM technology, similar behavior, only not supported by all the browsers, not recommended using.
 ```typescript
 @Component({
   // Other compononet properties
@@ -130,7 +130,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 ```
 **2.c. ViewEncapsulation.Emulated**
-**Emulated** encapsulates the style and, therefore, not necessary to define because it is set as default.
+- **Emulated** encapsulates the style and, therefore, not necessary to define because it is set as default.
 ```typescript
 @Component({
   // Other compononet properties
