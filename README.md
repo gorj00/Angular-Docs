@@ -176,3 +176,46 @@ onClickTry(tryReference: HTMLInputElement) {
     console.log(tryReference.value);
   }
 ```
+
+## # Access Template DOM with ViewChild
+Apart from calling local references inside methods, there is Another way of accessing HTML element (or its value) with **ViewChild** regardless whether it is called in a method.
+
+**1. step**
+  - In **.html file**, add local reference to HTML element with **#** _(hashtag)_:
+```html
+<input type="text" #try>
+```
+
+**2. step** 
+  - In **.ts file**, import **VieChild** from Angular core:
+```typescript
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
+```
+
+**3. step**
+  - In **.ts file**, add attribute to the class,
+  - add **@ChildView** decorator to the attribute,
+  - add **selector** as the decorator's property:
+      - this selector is not like a selector in CSS,
+      - local reference as the selector is written in .ts file without the # (hashtag),
+      - whole component can also be used as the selector.
+```typescript
+try;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
