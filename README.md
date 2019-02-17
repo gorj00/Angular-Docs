@@ -204,7 +204,7 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 ```
 
 **4. step**
-- In **.ts file**, you can access the element or it value with ElementRef's property **nativeElement**:
+- In **.ts file**, you can access the element or its value with ElementRef's property **nativeElement**:
 ```typescript
 onClickTry(tryReference: HTMLInputElement) {
     console.log(try.nativeElement.value);
