@@ -198,9 +198,9 @@ import { Component, OnInit, Input, ViewChild } from '@angular/core';
   - add **selector** as the decorator's property:
       - this selector is not like a selector in CSS,
       - local reference as the selector is written in .ts file without the # (hashtag),
-      - whole component can also be used as the selector.
+      - whole component can also be used as the selector, this way, the first occurance of this component is accessed.
 ```typescript
-try;
+@ChildView('try') try;
 ```
 
 
