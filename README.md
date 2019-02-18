@@ -229,7 +229,7 @@ It serves as **a hook** that can be placed in the component to **mark the place*
 ```html
 <!-- some html code -->
 	<app-component-1>
-  		<p>{{ data }}</p> <!-- this is going to be rendered where ng-content is placed -->
+  		<p>{{ data }}</p>	<!-- this is going to be rendered where ng-content is placed -->
  	</app-component-1>
 <!-- some html code -->
 ```
