@@ -212,7 +212,10 @@ onClickTry(tryReference: HTMLInputElement) {
 ```
 
 ## # Projecting Content with ng-content
-By default, everything placed in beetween the opening and closing tag of your own component will be ignored. This can be changed thanks to **ng-content** tag. 
+By default, everything placed in beetween the opening and closing tag of your own component will be ignored. This can be changed thanks to a directive **ng-content** (that looks like a HTML tag).
+
+It serves as **a hook** that can be placed in the component to **mark the place** for Angular, where it should add any content it finds between opening and closing tag of the component selector tag.
+
 **1. step**
   - In component 1 **.html file**, add **ng-content** opening and closing tag where the content is uspposed to be rendered:
 ```html
