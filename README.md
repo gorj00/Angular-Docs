@@ -220,6 +220,7 @@ It serves as **a hook** that can be placed in the component to **mark the place*
   - In component 1 **.html file**, add **ng-content** opening and closing tag where the content is uspposed to be rendered:
 ```html
 <!-- some html code -->
+  	<p>Hello!</p>
 	<ng-content></ng-content>
 <!-- some html code -->
 ```
@@ -231,6 +232,14 @@ It serves as **a hook** that can be placed in the component to **mark the place*
 	<app-component-1>
   		<p>{{ data }}</p>	<!-- this is going to be rendered where ng-content is placed -->
  	</app-component-1>
+<!-- some html code -->
+```
+
+Final rendered content of component 1 .html file: 
+```html
+<!-- some html code -->
+  	<p>Hello!</p>
+	<p>{{ data }}</p>
 <!-- some html code -->
 ```
 
