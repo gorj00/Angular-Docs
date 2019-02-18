@@ -224,6 +224,16 @@ It serves as **a hook** that can be placed in the component to **mark the place*
 <!-- some html code -->
 ```
 
+**2. step**
+  - In component 2 **.html file**, add your code (that is supposed to be rendered in .html file with ng-vontent directive tag) in between the **component selector tag**: 
+```html
+<!-- some html code -->
+	<app-component-1>
+  		<p>{{ data }}</p> <!-- example of rendered content -->
+ 	</app-component-1>
+<!-- some html code -->
+```
+
 
 
 
