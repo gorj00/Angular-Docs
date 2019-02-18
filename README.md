@@ -211,6 +211,19 @@ onClickTry(tryReference: HTMLInputElement) {
   }
 ```
 
+## # Projecting Content with ng-content
+By default, everything placed in beetween the opening and closing tag of your own component will be ignored. This can be changed thanks to **ng-content** tag. 
+**1. step**
+  - In component 1 **.html file**, add **ng-content** opening and closing tag where the content is uspposed to be rendered:
+```html
+<!-- some html code -->
+	<ng-content></ng-content>
+<!-- some html code -->
+```
+
+
+
+
 
 
 
