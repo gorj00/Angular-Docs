@@ -269,12 +269,17 @@ Define component lifecycle hooks methods you want to use:
 - **ngOnChanges()**
   - Called **mutltiple times**:
     - right after a component is screated, 
-    - whenever a bound input property changes (properties with a **@Input** decorator):
+    - whenever a bound input property changes (properties with a **@Input** decorator),
+  - the only hook with an argument of **SimpleChanges** type,
+  - SimpleChanges must also be imported from Angular core:
 ```typescript
-ngOnChanges() {
-  //TypeScript code to be executed on the hook
+import {Component, OnInit, OnChanges} from '@angular/core';
+ngOnChanges(changes: SimpleChanges) {
+  //TypeScript code to be executed on the hook 
+  //For example: console.log(changes);
 }
 ```
+  - **changes** is in object containing information about current and previous values.
 
 - **ngOnInit()**
   - Called once a component has been initialized,
