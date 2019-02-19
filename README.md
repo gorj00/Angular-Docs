@@ -248,6 +248,16 @@ These are methods that Angular calls when a component's lifecycle phases occur, 
 
 These methods are to be defined in **component ts. files**:
 
+**1. step**
+Implement interfaces of hooks you want to use: 
+```typescript
+export class ClassName implements OnInit, OnChanges, onDestroy {
+}
+```
+
+**2. step**
+Define component lifecycle hooks methods: 
+
 - **ngOnChanges()**
   - Called **mutltiple times**:
     - right after a component is screated, 
@@ -259,8 +269,8 @@ ngOnChanges() {
 
 - **ngOnInit()**
   - Called once a component has been initialized,
-  - component  hasn't been yet added to the DOM (component is not displayed yet), only **the object has been created** (properties are initialized and are accessible to us),
-  - runs **after the constructor**:
+  - component doesn't have to be yet added to the DOM (component is not displayed yet), only **the object has been created** (properties are initialized and are accessible to us),
+  - runs every **after the constructor** (with every new instance):
 ```typescript
 ngOnInit() {
 }
