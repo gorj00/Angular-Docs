@@ -246,7 +246,7 @@ Final rendered content of component 1 .html file:
 ## # Component Lifecycle Hooks
 These are methods that Angular calls when a component's lifecycle phases occur, we can execute our code base on the phase (event):
 
-- **ngOnChanges**
+- **ngOnChanges()**
   - Called **mutltiple times**:
     - right after a component is screated, 
     - whenever a bound input property changes (properties with a **@Input** decorator):
@@ -255,7 +255,7 @@ ngOnChanges() {
 }
 ```
 
-- **ngOnInit**
+- **ngOnInit()**
   - Called once a component has been initialized,
   - component  hasn't been yet added to the DOM (component is not displayed yet), only **the object has been created** (properties are initialized and are accessible to us),
   - runs **after the constructor**:
@@ -264,21 +264,21 @@ ngOnInit() {
 }
 ```
 
-- **ngDoCheck**
+- **ngDoCheck()**
   - Called **multiple times**, whenever **any change detection runs** (not only visible but every change):
 ```typescript
 ngDoCheck() {
 }
 ```
 
-- **ngAfterContentInit**
+- **ngAfterContentInit()**
   - Called after content **(ng-content)** has been **projected into view**:
 ```typescript
 ngAfterContentInit() {
 }
 ```
 
-- **ngAfterContentChecked**
+- **ngAfterContentChecked()**
   - Called every time the projected content has been **checked for changes**:
 ```typescript
 ngAfterContentChecked() {
