@@ -274,10 +274,11 @@ Define component lifecycle hooks methods you want to use:
   - SimpleChanges must also be imported from Angular core:
 ```typescript
 import {Component, OnInit, OnChanges} from '@angular/core';
+
 ngOnChanges(changes: SimpleChanges) {
   //TypeScript code to be executed on the hook 
   console.log(changes);
-  //**changes** is in object containing information about current and previous values
+  //changes is in object containing information about current and previous values
 }
 ```
 
