@@ -272,8 +272,15 @@ ngDoCheck() {
 ```
 
 - **ngAfterContentInit**
-  - Called after content **(ng-content)** has been projected into view:
+  - Called after content **(ng-content)** has been **projected into view**:
 ```typescript
 ngAfterContentInit() {
+}
+```
+
+- **ngAfterContentChecked**
+  - Called every time the projected content has been **checked for changes**:
+```typescript
+ngAfterContentChecked() {
 }
 ```
