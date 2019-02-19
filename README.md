@@ -5,7 +5,7 @@ Template is represented by your HTML (or HTML-like) code. Template **must be def
 
 There are **two ways** to include your HTML code, with inline template or with external file template:
 
-**1.a. Inline Template - ONE LINE of code** 
+### Inline Template - ONE LINE of code
 - assign property **template** to your component, 
 - write only one line of HTML code inside **single quotation marks**:
 ```typescript
@@ -16,7 +16,7 @@ There are **two ways** to include your HTML code, with inline template or with e
 })
 ```
 
-**1.b. Inline Template - MULTIPLE LINES of code** 
+### Inline Template - MULTIPLE LINES of code
 - assign property **template** to your component, 
 - write multiple lines of HTML code inside **backticks**:
 ```typescript
@@ -29,7 +29,7 @@ There are **two ways** to include your HTML code, with inline template or with e
 })
 ```
 
-**2. External File Template** _(default)_
+### External File Template _(default)_
 - assign property **templateUrl** to your component, 
 - add **path** to template **.html** file,
 - add **all HTML code** inside that .html file:
@@ -52,7 +52,7 @@ Styles are represented by your CSS code.
 
 There are **two ways** to include your CSS code, with inline styles or with external style file(s):
 
-**1. Inline Styles - ONE or MULTIPLE LINES of code** 
+### Inline Styles - ONE or MULTIPLE LINES of code
 - assign property **styles** to your component, 
 - write one or multiple lines of CSS code inside **brackets** and **backticks**:
 ```typescript
@@ -68,7 +68,7 @@ There are **two ways** to include your CSS code, with inline styles or with exte
 })
 ```
 
-**2. External Style File(s)** _(default)_
+### External Style File(s) _(default)_
 - assign property **styleUrls** to your component (it's an **array**), 
 - add **path(s)** to **.css** style file(s),
 - add **all CSS code** inside that/those .css file(s),
