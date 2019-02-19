@@ -246,6 +246,13 @@ Final rendered content of component 1 .html file:
 ## # Component Lifecycle Hooks
 These are methods that Angular calls when a component's lifecycle phases occur, we can execute our code base on the phase (event). 
 
+**Lifecycle phases:**
+- Constructor is called
+- Component instance is initialized - Init _(object created, not in the DOM yet)_ 
+- Content (ng-content) is initialized (projected)
+- View is initialized _(elements added to the DOM)_
+- Component instance is destroyed _(elements removed from the DOM)_
+
 These methods are to be defined in **component ts. files**:
 
 **1. step**
