@@ -5,7 +5,7 @@
 - Component Styles
 - ...
 
-## 02. Component Databinding.md
+## 02. Component Databinding (Communication).md
 - Binding to Custom Properties
 - Binding to Custom Events
 - View Encapsulation
