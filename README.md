@@ -281,6 +281,7 @@ ngOnChanges() {
   - runs every **after the constructor** (with every new instance):
 ```typescript
 ngOnInit() {
+  //TypeScript code to be executed on the hook
 }
 ```
 
@@ -288,6 +289,7 @@ ngOnInit() {
   - Called **multiple times**, whenever **any change detection runs** (not only visible but every change):
 ```typescript
 ngDoCheck() {
+  //TypeScript code to be executed on the hook
 }
 ```
 
@@ -295,6 +297,7 @@ ngDoCheck() {
   - Called after content **(ng-content)** has been **projected into view**:
 ```typescript
 ngAfterContentInit() {
+  //TypeScript code to be executed on the hook
 }
 ```
 
@@ -302,6 +305,7 @@ ngAfterContentInit() {
   - Called every time the projected content has been **checked for changes**:
 ```typescript
 ngAfterContentChecked() {
+  //TypeScript code to be executed on the hook
 }
 ```
 
@@ -309,6 +313,7 @@ ngAfterContentChecked() {
   - Called after component's view (and child views) has been initialized::
 ```typescript
 ngAfterViewInit() {
+  //TypeScript code to be executed on the hook
 }
 ```
 
@@ -316,6 +321,7 @@ ngAfterViewInit() {
   - Called every time the view (and child views) has been checked:
 ```typescript
 ngAfterViewChecked() {
+  //TypeScript code to be executed on the hook
 }
 ```
 
@@ -323,5 +329,6 @@ ngAfterViewChecked() {
   - Called once a component is about to be destroyed (removed from the DOM):
 ```typescript
 ngOnDestroy() {
+  //TypeScript code to be executed on the hook
 }
 ```
