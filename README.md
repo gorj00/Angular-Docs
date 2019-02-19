@@ -42,7 +42,7 @@ There are **two ways** to include your HTML code, with inline template or with w
 })
 ```
 ```html
-// component .html file
+<!-- component .html file -->
 <app-child></app-child>
 <app-child></app-child>
 ```
