@@ -90,10 +90,10 @@ h3 {
 }
 ```
 
-## # Components Databinding (Communication)
+# # Components Databinding (Communication)
 Binding to custom properties and biding to custom events is suitable for input and output, for more complex component communcation use **_services_**.
-### ## Binding to Custom Properties
-#### Component Informed by PARENT Component
+## ## Binding to Custom Properties
+### Component Informed by PARENT Component
 **1.a. step** 
   - In child component **.ts file**, define property with assigned type as a javascript object (or any other type), 
   - add decorator **@Input()** (don't forget the braces) before property name, 
@@ -127,8 +127,8 @@ serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 ```
 
 
-### ## Binding to Custom Events
-#### Component Informed by CHILD Component
+## ## Binding to Custom Events
+### Component Informed by CHILD Component
 We want to "listen" to some events, for example, we want to inform parent component that new server was created. 
 
 **1. step** 
@@ -180,7 +180,7 @@ onAddServer() {
 }
 ```
 
-## # View Encapsulation
+## ## View Encapsulation
 Styles are applicable only isnide the concrete components by default. Meaning, styles defined in component **.css file** will not affect the style of other components.  
 
 It is due to Angular generating unique properties **_ngcontent-ejo-x** to HTML elements belonging to the concrete component.
@@ -190,7 +190,7 @@ It is due to Angular generating unique properties **_ngcontent-ejo-x** to HTML e
 <div _ngcontent-ejo-0 class="row"></div>
 ```
 
-### ## Overwriting Style Encapsulation
+### Overwriting Style Encapsulation
 It is possible to overwrite these default styles encapsulation settings. 
 
 **1. step** 
@@ -228,7 +228,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 ```
 
-## # Local Reference in Templates
+## ## Local Reference in Templates
 Get the whole HTML element from template. 
 
 Can be used as an alternative to **two-way-binding** to get a **value** of HTML element (for example user's input).
@@ -267,7 +267,7 @@ onClickTry(tryReference: HTMLInputElement) {
   }
 ```
 
-## # Access Template DOM with ViewChild
+## ## Access Template DOM with ViewChild
 Apart from calling local references inside methods, there is another way of accessing HTML element (or its value) with **ViewChild** regardless whether it is called in a method.
 
 **1. step**
@@ -300,7 +300,7 @@ onClickTry(tryReference: HTMLInputElement) {
   }
 ```
 
-## # Projecting Content with ng-content
+## ## Projecting Content with ng-content
 By default, everything placed in beetween the opening and closing tag of your own component will be ignored. This can be changed thanks to a directive **ng-content** (that looks like a HTML tag).
 
 It serves as **a hook** that can be placed in the component to **mark the place** for Angular, where it should add any content it finds between opening and closing tag of the component selector tag.
@@ -332,7 +332,7 @@ Final rendered content of component 1 .html file:
 <!-- some html code -->
 ```
 
-## # Component Lifecycle Hooks
+## ## Component Lifecycle Hooks
 These are methods that Angular calls when a component's lifecycle phases occur, we can execute our code base on the phase (event). 
 
 **Lifecycle phases:**
@@ -438,7 +438,7 @@ ngOnDestroy() {
 }
 ```
 
-## # Access ng-content with ContentView
+## ## Access ng-content with ContentView
 It is **not possible** to access elements rendered by **ng-content** with ViewChild, since the elements have not been added to the DOM (because they are about to be only projected to where ng-content tag is placed) and therefore are not part of the **View** of the component yet. 
 
 But it is possible to access the elements as **Content** of the component. 
