@@ -255,6 +255,7 @@ export class ClassName implements OnInit, OnChanges, onDestroy {
 }
 ```
 
+
 **2. step**
 Define component lifecycle hooks methods: 
 
