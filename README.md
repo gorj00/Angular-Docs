@@ -4,7 +4,7 @@
 ### ## Component Template
 Template is represented your HTML (or HTML-like) code. Template **must be defined** in your component (selector and styles may be omitted).
 
-There are **two ways** to include your HTML code.
+There are **two ways** to include your HTML code, with inline template or with with external file template:
 
 **1.a. Inline Template - ONE LINE of code** 
 - assign property **template** to your component, 
