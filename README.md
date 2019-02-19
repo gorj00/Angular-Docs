@@ -249,6 +249,7 @@ These are methods that Angular calls when a component's lifecycle phases occur, 
 These methods are to be defined in **component ts. files**:
 
 **1. step**
+
 Implement interfaces of hooks you want to use: 
 ```typescript
 export class ClassName implements OnInit, OnChanges, onDestroy {
@@ -257,6 +258,7 @@ export class ClassName implements OnInit, OnChanges, onDestroy {
 
 
 **2. step**
+
 Define component lifecycle hooks methods: 
 
 - **ngOnChanges()**
