@@ -54,13 +54,13 @@ Styles are represented by your CSS code.
 
 There are **two ways** to include your CSS code, with inline styles or with with external style file(s):
 
-**1.b. Inline Styles - ONE or MULTIPLE LINES of code** 
+**1. Inline Styles - ONE or MULTIPLE LINES of code** 
 - assign property **styles** to your component, 
 - write one or multiple lines of CSS code inside **brackets** and **backticks**:
 ```typescript
 @Component({
-  selector: 'app-component',
-  templateUrl: './app-component.component.html',
+  selector: 'post-component',
+  templateUrl: './post.component.html',
   styles: [`
 	h3 {
       color: red;
@@ -68,6 +68,28 @@ There are **two ways** to include your CSS code, with inline styles or with with
     }
   `]
 })
+```
+
+**2. External Style File(s)**
+- assign property **styleUrls** to your component (it's an **array**), 
+- add **path(s)** to style **.css** file(s),
+- add **all CSS code** inside that/those .css file(s),
+- setting paths to **multiple files is allowed**,
+- paths to .css files are inside **an array**:
+```typescript
+// component .ts file
+@Component({
+  selector: 'post-component',
+  templateUrl: './post.component.html',
+  styleUrls: ['./post.component.css', './post-mobile.component.css']
+})
+```
+```css
+/*.css style file */
+h3 {
+  color: red;
+  line-height: 25px;
+}
 ```
 
 ## # Components Databinding (Communication)
