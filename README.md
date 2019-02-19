@@ -64,7 +64,7 @@ There are **two ways** to include your CSS code, with inline styles or with exte
   styles: [`
 	h3 {
       color: red;
-	  line-height: 25px;
+  line-height: 25px;
     }
   `]
 })
