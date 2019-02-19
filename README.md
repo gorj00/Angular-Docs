@@ -178,7 +178,7 @@ onClickTry(tryReference: HTMLInputElement) {
 ```
 
 ## # Access Template DOM with ViewChild
-Apart from calling local references inside methods, there is Another way of accessing HTML element (or its value) with **ViewChild** regardless whether it is called in a method.
+Apart from calling local references inside methods, there is another way of accessing HTML element (or its value) with **ViewChild** regardless whether it is called in a method.
 
 **1. step**
   - In **.html file**, add local reference to HTML element with **#** _(hashtag)_:
@@ -187,20 +187,20 @@ Apart from calling local references inside methods, there is Another way of acce
 ```
 
 **2. step** 
-  - In **.ts file**, import **VieChild** and **ElementRef** from Angular core:
+  - In **.ts file**, import **ViewChild** and **ElementRef** from Angular core:
 ```typescript
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 ```
 
 **3. step**
   - In **.ts file**, add attribute to the class of a **ElementRef** type,
-  - add **@ChildView** decorator to the attribute,
+  - add **@ViewChild** decorator to the attribute,
   - add **selector** as the decorator's property:
       - this selector is not like a selector in CSS,
       - local reference as the selector is written in .ts file without the # (hashtag),
       - whole component can also be used as the selector, this way, the first occurance of this component is accessed.
 ```typescript
-@ChildView('try') try: ElementRef;
+@ViewChild('try') try: ElementRef;
 ```
 
 **4. step**
@@ -346,5 +346,47 @@ ngAfterViewChecked() {
 ```typescript
 ngOnDestroy() {
   //TypeScript code to be executed on the hook
+}
+```
+
+## # Access ng-content with ContentView
+It is **not possible** to access elements from **ng-content** with ViewChild, since the elements have not been added to the DOM (because they are about to be only projected to where ng-content tag is placed) and therefore are not part of the **View** of the component yet. 
+
+But it is possible to access the elements as **Content** of the component. 
+
+
+**1. step**
+  - In **.html file** where component-selector-tag is placed, add local reference to HTML element with **#** _(hashtag)_:
+```html
+<component-selector-tag>
+    // Content that will be projected with ng-content
+	<p #try>
+    	// Content that will be projected with ng-content
+    </p>
+    // Content that will be projected with ng-content
+</component-selector-tag>
+```
+
+**2. step** 
+  - In **.ts file** of the actual component (not the same folder as the previous .html file), import **ContentChild** and **ElementRef** from Angular core:
+```typescript
+import { Component, OnInit, Input, ContentChild, ElementRef } from '@angular/core';
+```
+
+**3. step**
+  - In the same **.ts file**, add attribute to the class of a **ElementRef** type,
+  - add **@ContentChild** decorator to the attribute,
+  - add **selector** as the decorator's property:
+      - this selector is not like a selector in CSS,
+      - local reference as the selector is written in .ts file without the # (hashtag).
+```typescript
+@ContentChild('try') try: ElementRef;
+```
+
+**4. step**
+- In the same **.ts file**, you can access the element or its textual value with ElementRef's property **textContent**:
+```typescript
+ngAfterContentInit() {
+console.log(this.try.nativeElement.textContent);
 }
 ```
