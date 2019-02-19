@@ -8,7 +8,7 @@ There are **two ways** to include your HTML code, with inline template or with w
 
 **1.a. Inline Template - ONE LINE of code** 
 - assign property **template** to your component, 
-- write a string of HTML code inside **single quotation marks**:
+- write only one line of HTML code inside **single quotation marks**:
 ```typescript
 @Component({
   selector: 'app-parent',
@@ -19,7 +19,7 @@ There are **two ways** to include your HTML code, with inline template or with w
 
 **1.b. Inline Template - MULTIPLE LINES of code** 
 - assign property **template** to your component, 
-- write a string of HTML code inside **backticks**:
+- write multiple lines of HTML code inside **backticks**:
 ```typescript
 @Component({
   selector: 'app-parent',
