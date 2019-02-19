@@ -277,8 +277,8 @@ import {Component, OnInit, OnChanges} from '@angular/core';
 
 ngOnChanges(changes: SimpleChanges) {
   //TypeScript code to be executed on the hook 
-  console.log(changes);
-  //changes is in object containing information about current and previous values
+  //Example:
+  console.log(changes); //changes is in object containing information about current and previous values
 }
 ```
 
