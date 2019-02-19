@@ -252,37 +252,37 @@ These methods are to be defined in **component ts. files**:
   - Called **mutltiple times**:
     - right after a component is screated, 
     - whenever a bound input property changes (properties with a **@Input** decorator):
-```typescript
-ngOnChanges() {
-}
-```
+  ```typescript
+  ngOnChanges() {
+  }
+  ```
 
 - **ngOnInit()**
   - Called once a component has been initialized,
   - component  hasn't been yet added to the DOM (component is not displayed yet), only **the object has been created** (properties are initialized and are accessible to us),
   - runs **after the constructor**:
-```typescript
-ngOnInit() {
-}
-```
+  ```typescript
+  ngOnInit() {
+  }
+  ```
 
 - **ngDoCheck()**
   - Called **multiple times**, whenever **any change detection runs** (not only visible but every change):
-```typescript
-ngDoCheck() {
-}
-```
+  ```typescript
+  ngDoCheck() {
+  }
+  ```
 
 - **ngAfterContentInit()**
   - Called after content **(ng-content)** has been **projected into view**:
-```typescript
-ngAfterContentInit() {
-}
-```
+  ```typescript
+  ngAfterContentInit() {
+  }
+  ```
 
 - **ngAfterContentChecked()**
   - Called every time the projected content has been **checked for changes**:
-```typescript
-ngAfterContentChecked() {
-}
-```
+  ```typescript
+  ngAfterContentChecked() {
+  }
+  ```
