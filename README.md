@@ -196,10 +196,8 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
   - In **.ts file**, add attribute to the class of a **ElementRef** type,
   - add **@ViewChild** decorator to the attribute,
   - add **selector** as the decorator's property:
-    - this selector is not like a selector in CSS,
-    - local reference as the selector is written in .ts file without the # (hashtag),
-    - whole component can also be used as the selector, this way, the first occurance of this component is accessed:
-
+  
+  _This selector is not like a selector in CSS, local reference as the selector is written in .ts file without the # (hashtag), whole component can also be used as the selector, this way, the first occurance of this component is accessed:_
 
 ```typescript
 @ViewChild('try') try: ElementRef;
