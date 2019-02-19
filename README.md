@@ -272,6 +272,7 @@ Define component lifecycle hooks methods you want to use:
     - whenever a bound input property changes (properties with a **@Input** decorator):
 ```typescript
 ngOnChanges() {
+  //TypeScript code to be executed on the hook
 }
 ```
 
