@@ -286,3 +286,24 @@ ngAfterContentInit() {
 ngAfterContentChecked() {
 }
 ```
+
+- **ngAfterViewInit()**
+  - Called after component's view (and child views) has been initialized::
+```typescript
+ngAfterViewInit() {
+}
+```
+
+- **ngAfterViewChecked()**
+  - Called every time the view (and child views) has been checked:
+```typescript
+ngAfterViewChecked() {
+}
+```
+
+- **ngOnDestroy()**
+  - Called once a component is about to be destroyed (removed from the DOM):
+```typescript
+ngOnDestroy() {
+}
+```
