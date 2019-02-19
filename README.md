@@ -309,7 +309,8 @@ ngAfterContentInit() {
 ```
 
 - **ngAfterContentChecked()**
-  - Called every time the projected content has been **checked for changes**:
+  - Called every time the projected content has been **checked for changes**,
+  - therefore, runs after ngDoCheck():
 ```typescript
 ngAfterContentChecked() {
   //TypeScript code to be executed on the hook
