@@ -249,7 +249,7 @@ These are methods that Angular calls when a component's lifecycle phases occur, 
 - **ngOnChanges**
 	- Executed mutltiple times
 		- right after a component is screated, 
-		- whenever one of our bound input properties changes (properties with a **@Input** decorator):
+		- whenever a bound input property changes (properties with a **@Input** decorator):
 ```typescript
 ngOnChanges() {
 }
