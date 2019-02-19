@@ -1,7 +1,8 @@
 # Angular 7+ Cheat Sheet
 
 ## # The Basics
-
+****
+----
 ### ## Component Template
 Template is represented by your HTML (or HTML-like) code. Template **must be defined** in your component (selector and styles may be omitted).
 
