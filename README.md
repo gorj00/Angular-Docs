@@ -5,9 +5,9 @@
 Template is represented your HTML (or HTML-like) code. Template **must be defined** in your component (selector and styles may be omitted).
 
 There are **two ways** to include your HTML code.
--**1.a. Inline Template - ONE LINE of code** 
-  - assign property **template** to your component, 
-  - write a string of HTML code inside **single quotation marks**:
+**1.a. Inline Template - ONE LINE of code** 
+- assign property **template** to your component, 
+- write a string of HTML code inside **single quotation marks**:
 ```typescript
 @Component({
   selector: 'app-parent',
@@ -16,9 +16,9 @@ There are **two ways** to include your HTML code.
 })
 ```
 
--**1.b. Inline Template - MULTIPLE LINES of code** 
-  - assign property **template** to your component, 
-  - write a string of HTML code inside **backticks**:
+**1.b. Inline Template - MULTIPLE LINES of code** 
+- assign property **template** to your component, 
+- write a string of HTML code inside **backticks**:
 ```typescript
 @Component({
   selector: 'app-parent',
