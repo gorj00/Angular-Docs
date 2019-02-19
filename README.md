@@ -249,13 +249,12 @@ These are methods that Angular calls when a component's lifecycle phases occur, 
 These methods are to be defined in **component ts. files**:
 
 **1. step**
-Import the interfaces of hooks you want to use, 
+Import the hooks you want to use, 
 ```typescript
-import {Component, OnInit, OnChanges, OnDestroy}
-}
+import {Component, OnInit, OnChanges, OnDestroy} from '@angular/core';
 ```
 
-and implement them:  
+and implement their interfaces to the class:  
 ```typescript
 export class ClassName implements OnInit, OnChanges, onDestroy {
 }
