@@ -72,7 +72,7 @@ There are **two ways** to include your CSS code, with inline styles or with exte
 
 **2. External Style File(s)**
 - assign property **styleUrls** to your component (it's an **array**), 
-- add **path(s)** to style **.css** file(s),
+- add **path(s)** to **.css** style file(s),
 - add **all CSS code** inside that/those .css file(s),
 - setting paths to **multiple files is allowed**,
 - paths to .css files are inside **an array**:
