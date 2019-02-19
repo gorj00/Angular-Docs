@@ -6,4 +6,11 @@
 - ...
 
 ## 02. Component Databinding.md
-- 
+- Binding to Custom Properties
+- Binding to Custom Events
+- View Encapsulation
+- Local References in Templates
+- Access Template DOM with ViewChild
+- Projecting Content with ng-content
+- Component Lifecycle Hooks
+- Access ng-content with ContentView
