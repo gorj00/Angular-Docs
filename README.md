@@ -31,7 +31,7 @@ There are **two ways** to include your HTML code, with inline template or with e
 })
 ```
 
-**2. External File Template**
+**2. External File Template** _(default)_
 - assign property **templateUrl** to your component, 
 - add **path** to template **.html** file,
 - add **all HTML code** inside that .html file:
@@ -70,7 +70,7 @@ There are **two ways** to include your CSS code, with inline styles or with exte
 })
 ```
 
-**2. External Style File(s)**
+**2. External Style File(s)** _(default)_
 - assign property **styleUrls** to your component (it's an **array**), 
 - add **path(s)** to **.css** style file(s),
 - add **all CSS code** inside that/those .css file(s),
