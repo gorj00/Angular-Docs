@@ -247,10 +247,10 @@ Final rendered content of component 1 .html file:
 These are methods that Angular calls when a component's lifecycle phases occur, we can execute our code base on the phase (event):
 
 - **ngOnChanges**
-	- Executed several times
-		- Right after the component i screated, 
-		- whenever one of our bound properties changes
+	- Executed mutltiple times
+		- right after a component is screated, 
+		- whenever one of our bound input properties changes (properties with a **@Input** decorator):
 ```typescript
 ngOnChanges() {
-  }
+}
 ```
