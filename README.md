@@ -1,5 +1,35 @@
 # Angular 7+ Cheat Sheet
 
+## # The Basics
+### ## Component Template
+Template is represented your HTML (or HTML-like) code. Template **must be defined** in your component (selector and styles may be omitted).
+
+There are **two ways** to include your HTML code.
+-**1.a. Inline Template - ONE LINE of code** 
+  - assign property **template** to your component, 
+  - write a string of HTML code inside **single quotation marks**:
+```typescript
+@Component({
+  selector: 'app-parent',
+  template: '<app-child></app-child><app-child></app-child>',
+  styleUrls: ['./parent.component.css']
+})
+```
+
+-**1.b. Inline Template - MULTIPLE LINES of code** 
+  - assign property **template** to your component, 
+  - write a string of HTML code inside **backticks**:
+```typescript
+@Component({
+  selector: 'app-parent',
+  template: `
+	<app-child></app-child>
+	<app-child></app-child>`,
+  styleUrls: ['./parent.component.css']
+})
+```
+
+
 ## # Components Databinding (Communication)
 Binding to custom properties and biding to custom events is suitable for input and output, for more complex component communcation use **_services_**.
 ### ## Binding to Custom Properties
