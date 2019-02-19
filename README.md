@@ -263,3 +263,17 @@ ngOnChanges() {
 ngOnInit() {
 }
 ```
+
+- **ngDoCheck**
+  - Called **multiple times**, whenever **any change detection runs** (not only visible but every change):
+```typescript
+ngDoCheck() {
+}
+```
+
+- **ngAfterContentInit**
+  - Called after content **(ng-content)** has been projected into view:
+```typescript
+ngAfterContentInit() {
+}
+```
