@@ -360,9 +360,7 @@ But it is possible to access the elements as **Content** of the component.
 ```html
 <component-selector-tag>
     // Content that will be projected with ng-content
-	<p #try>
-    	// Content that will be projected with ng-content
-    </p>
+	<p #try>Some text</p>
     // Content that will be projected with ng-content
 </component-selector-tag>
 ```
