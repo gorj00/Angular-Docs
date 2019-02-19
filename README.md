@@ -1,9 +1,6 @@
-# Angular 7+ Cheat Sheet
+# # The Basics
 
-## # The Basics
-
-### ## Component Template
-----
+## ## Component Template
 Template is represented by your HTML (or HTML-like) code. Template **must be defined** in your component (selector and styles may be omitted).
 
 There are **two ways** to include your HTML code, with inline template or with external file template:
@@ -50,8 +47,7 @@ There are **two ways** to include your HTML code, with inline template or with e
 <app-child></app-child>
 ```
 
-### ## Component Styles
-----
+## ## Component Styles
 Styles are represented by your CSS code.
 
 There are **two ways** to include your CSS code, with inline styles or with external style file(s):
