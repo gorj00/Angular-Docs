@@ -264,7 +264,7 @@ export class ClassName implements OnInit, OnChanges, onDestroy {
 
 **2. step**
 
-Define component lifecycle hooks methods: 
+Define component lifecycle hooks methods you want to use: 
 
 - **ngOnChanges()**
   - Called **mutltiple times**:
