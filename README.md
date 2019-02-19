@@ -32,7 +32,8 @@ There are **two ways** to include your HTML code, with inline template or with w
 
 **2. External File Template**
 - assign property **templateUrl** to your component, 
-- add **path** to template **.html** file:
+- add **path** to template **.html** file,
+- add **all HTML code** inside that .html file:
 ```typescript
 // component .ts file
 @Component({
