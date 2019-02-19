@@ -244,7 +244,9 @@ Final rendered content of component 1 .html file:
 ```
 
 ## # Component Lifecycle Hooks
-These are methods that Angular calls when a component's lifecycle phases occur, we can execute our code base on the phase (event):
+These are methods that Angular calls when a component's lifecycle phases occur, we can execute our code base on the phase (event). 
+
+These methods are to be defined in **component ts. files**:
 
 - **ngOnChanges()**
   - Called **mutltiple times**:
