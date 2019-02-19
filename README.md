@@ -276,10 +276,10 @@ Define component lifecycle hooks methods you want to use:
 import {Component, OnInit, OnChanges} from '@angular/core';
 ngOnChanges(changes: SimpleChanges) {
   //TypeScript code to be executed on the hook 
-  //For example: console.log(changes);
+  console.log(changes);
+  //**changes** is in object containing information about current and previous values
 }
 ```
-  - **changes** is in object containing information about current and previous values.
 
 - **ngOnInit()**
   - Called once a component has been initialized,
