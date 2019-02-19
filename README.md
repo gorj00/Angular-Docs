@@ -318,7 +318,8 @@ ngAfterContentChecked() {
 ```
 
 - **ngAfterViewInit()**
-  - Called after component's view (and child views) has been initialized::
+  - Called after component's view (and child views) has been initialized,
+  - access to **template elements granted** (their values and so on):
 ```typescript
 ngAfterViewInit() {
   //TypeScript code to be executed on the hook
