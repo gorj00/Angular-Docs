@@ -247,10 +247,19 @@ Final rendered content of component 1 .html file:
 These are methods that Angular calls when a component's lifecycle phases occur, we can execute our code base on the phase (event):
 
 - **ngOnChanges**
-	- Executed mutltiple times
-		- right after a component is screated, 
-		- whenever a bound input property changes (properties with a **@Input** decorator):
+  - Called **mutltiple times**:
+    - right after a component is screated, 
+    - whenever a bound input property changes (properties with a **@Input** decorator):
 ```typescript
 ngOnChanges() {
+}
+```
+
+- **ngOnInit**
+  - Called once a component has been initialized,
+  - component  hasn't been yet added to the DOM (component is not displayed yet), only **the object has been created** (properties are initialized and are accessible to us),
+  - runs **after the constructor**:
+```typescript
+ngOnInit() {
 }
 ```
