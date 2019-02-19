@@ -350,7 +350,7 @@ ngOnDestroy() {
 ```
 
 ## # Access ng-content with ContentView
-It is **not possible** to access elements from **ng-content** with ViewChild, since the elements have not been added to the DOM (because they are about to be only projected to where ng-content tag is placed) and therefore are not part of the **View** of the component yet. 
+It is **not possible** to access elements rendered by **ng-content** with ViewChild, since the elements have not been added to the DOM (because they are about to be only projected to where ng-content tag is placed) and therefore are not part of the **View** of the component yet. 
 
 But it is possible to access the elements as **Content** of the component. 
 
