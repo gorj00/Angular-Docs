@@ -1,11 +1,11 @@
 # # Angular 7+ Documentation
 
-## 01. The Basics.md
+## [01. The Basics.md](https://github.com/gorj00/Angular-Docs/blob/master/01.%20The%20Basics.md)
 - Component Template
 - Component Styles
 - ...
 
-## 02. Component Databinding (Communication).md
+## [02. Component Databinding (Communication).md](https://github.com/gorj00/Angular-Docs/blob/master/02.%20Component%20Databinding%20(Communication).md)
 - Binding to Custom Properties
 - Binding to Custom Events
 - View Encapsulation
