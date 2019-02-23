@@ -6,7 +6,8 @@
 - Databinding
   - String Interpolation
   - Property Binding
-  - 
+  - Event Binding
+  - Two-Way Binding
 - ... _add remaining sections_!
 
 ## [02. Component Databinding (Communication)](https://github.com/gorj00/Angular-Docs/blob/master/02.%20Component%20Databinding%20(Communication).md)
