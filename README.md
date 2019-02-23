@@ -3,6 +3,10 @@
 ## [01. The Basics](https://github.com/gorj00/Angular-Docs/blob/master/01.%20The%20Basics.md)
 - Component Template
 - Component Styles
+- Databinding
+  - String Interpolation
+  - Property Binding
+  - 
 - ... _add remaining sections_!
 
 ## [02. Component Databinding (Communication)](https://github.com/gorj00/Angular-Docs/blob/master/02.%20Component%20Databinding%20(Communication).md)
