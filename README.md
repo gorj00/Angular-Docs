@@ -1,13 +1,13 @@
 # Angular 7+ Documentation
 
 ## [1 The Basics](https://github.com/gorj00/Angular-Docs/blob/master/01.%20The%20Basics.md)
-1. Component Template
-1. Component Styles
-1. Databinding
-    1. String Interpolation
-    1. Property Binding
-    1. Event Binding
-    1. Two-Way Binding
+- Component Template
+- Component Styles
+- Databinding
+  - String Interpolation
+  - Property Binding
+  - Event Binding
+  - Two-Way Binding
 
 ## [02. Component Databinding (Communication)](https://github.com/gorj00/Angular-Docs/blob/master/02.%20Component%20Databinding%20(Communication).md)
 - Binding to Custom Properties
