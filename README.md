@@ -23,5 +23,5 @@
 - ngIf
 - ngStyle
 - ngClass
-- ngFor (not finished)
+- ngFor
 - _add other sections_ ...
