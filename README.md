@@ -20,4 +20,5 @@
 - Access ng-content with ContentView
 
 ## [3 Directives](./03.%20Directives.md)
+- - Directive ngIf
 - _add sections_ ...
