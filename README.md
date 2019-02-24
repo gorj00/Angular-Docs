@@ -22,4 +22,5 @@
 ## [3 Directives](./03.%20Directives.md)
 - ngIf
 - ngStyle
+- ngFor
 - _add sections_ ...
