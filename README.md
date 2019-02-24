@@ -1,6 +1,7 @@
 # Angular 7+ Documentation
 
 ## [1 The Basics](./01.%20The%20Basics.md)
+- Basic CLI Commands
 - Component Template
 - Component Styles
 - Databinding
