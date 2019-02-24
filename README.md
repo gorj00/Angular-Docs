@@ -24,4 +24,5 @@
 - ngStyle
 - ngClass
 - ngFor
+- Custom Directive
 - _add other sections_ ...
