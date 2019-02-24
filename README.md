@@ -22,5 +22,6 @@
 ## [3 Directives](./03.%20Directives.md)
 - ngIf
 - ngStyle
-- ngFor
-- _add sections_ ...
+- ngClass
+- ngFor (not finished)
+- _add other sections_ ...
