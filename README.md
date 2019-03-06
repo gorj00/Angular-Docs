@@ -27,5 +27,6 @@
 - ngFor
 - Custom Directive
 - Using Renderer to Access Directive Elements
-- Reactive Directives with Renderer and HostListener
+- Reactive Directive with Renderer and HostListener
+- Reactive Directive with HostBinding
 - _add other sections_ ...
