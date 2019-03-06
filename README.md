@@ -29,6 +29,6 @@ _this section has not been yet checked for mistakes and errors_
 - ngClass
 - ngFor
 - Custom Directive
-- Using Renderer to Access Elements
-- Reactive Directives with HostListener (JavaScript Events)
+- Using Renderer to Access Directive Elements
+- Reactive Directives with Renderer and HostListener
 - _add other sections_ ...
