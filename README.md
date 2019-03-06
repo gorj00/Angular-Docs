@@ -30,4 +30,5 @@ _this section has not been yet checked for mistakes and errors_
 - ngFor
 - Custom Directive
 - Using Renderer to Access Elements
+- Reactive Directives with HostListener (JavaScript Events)
 - _add other sections_ ...
