@@ -21,7 +21,7 @@
 - Access ng-content with ContentView
 
 ## [3 Directives](./03.%20Directives.md)
-- Custom Directive
+- Custom Attribute Directive
 - Using Renderer to Access Directive Elements
 - Reactive Directive with Renderer and HostListener
 - Reactive Directive with HostBinding
