@@ -25,10 +25,11 @@
 - Using Renderer to Access Directive Elements
 - Reactive Directive with Renderer and HostListener
 - Reactive Directive with HostBinding
-- _add other sections_ ...
+- Custom Structural Directive
 
 ## [4 Built-in Directives](./04.%20Built-in%20Directives.md)
 - ngIf
 - ngStyle
 - ngClass
 - ngFor
+- ngSwitch
