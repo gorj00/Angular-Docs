@@ -37,3 +37,6 @@
 ## [5 Dependency Injection (Services)](./05.%20Dependency%20Injection%20(Services).md)
 - Injecting a Service to a Component
 - Hierarchical Injector
+
+## [6 Routing](./06.%20Routing.md)
+- _add sections_
