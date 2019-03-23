@@ -44,4 +44,7 @@ _The following documentatiton has not been checked for errors yet._
 - Registering Routes
 - Rendering the Components of the Routes
 - Navigating with Router Links
+- Navigation Paths
+- Styling Active Router Links
+- Navigating Programmatically
 - _more sections are being created_
