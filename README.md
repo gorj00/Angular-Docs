@@ -41,4 +41,7 @@ _The following documentatiton has not been checked for errors yet._
 - Injecting Services into Services
 
 ## [6 Routing](./06.%20Routing.md)
+- Registering Routes
+- Rendering the Components of the Routes
+- Navigating with Router Links
 - _add sections_
