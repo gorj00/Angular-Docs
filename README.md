@@ -1,4 +1,5 @@
 # Angular 7+ Documentation
+_The following documentatiton has not been checked for errors yet._
 
 ## [1 The Basics](./01.%20The%20Basics.md)
 - Basic CLI Commands
