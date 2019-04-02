@@ -53,10 +53,10 @@ _The following documentatiton has not been checked for errors yet._
 ***
 
 ## Remaining areas to learn and document
-- Observables
-- Forms
-- Pipes
-- Http Requsts
-- Authentication
-- Deployment
+- _Observables_
+- _Forms_
+- _Pipes_
+- _Http Requsts_
+- _Authentication_
+- _Deployment_
 
