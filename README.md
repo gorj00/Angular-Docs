@@ -48,3 +48,12 @@ _The following documentatiton has not been checked for errors yet._
 - Styling Active Router Links
 - Navigating Programmatically
 - _more sections are being created_
+
+**Remaining areas to learn and document**
+- Observables
+- Forms
+- Pipes
+- Http Requsts
+- Authentication
+- Deployment
+
