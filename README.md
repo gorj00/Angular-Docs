@@ -49,7 +49,10 @@ _The following documentatiton has not been checked for errors yet._
 - Navigating Programmatically
 - _more sections are being created_
 
-**Remaining areas to learn and document**
+***
+***
+
+## Remaining areas to learn and document
 - Observables
 - Forms
 - Pipes
