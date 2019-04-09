@@ -47,6 +47,8 @@ _The following documentatiton has not been checked for errors yet._
 - Navigation Paths
 - Styling Active Router Links
 - Navigating Programmatically
+- Programmatic Navigation and Relative Paths
+
 - _more sections are being created_
 
 ***
