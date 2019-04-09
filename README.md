@@ -52,11 +52,13 @@ _The following documentatiton has not been checked for errors yet._
 ***
 ***
 
-## Remaining areas to learn and document
+## Remaining areas to be learned and documented
 - _Observables_
 - _Forms_
 - _Pipes_
 - _Http Requsts_
 - _Authentication_
+- _Optimizations_
+- _NgModule_
 - _Deployment_
 
