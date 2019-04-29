@@ -49,6 +49,7 @@ _The following documentatiton has not been checked for errors yet._
 - Navigating Programmatically
 - Programmatic Navigation and Relative Paths
 - Passing Parameters to Routes and Fetching Parameters
+- Passing Query Parameters and Fragments
 - _more sections are being created_
 
 ***
