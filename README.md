@@ -55,7 +55,7 @@ _The following documentatiton has not been checked for errors yet._
 ***
 ***
 
-## Remaining areas to be learned and documented
+## Remaining areas to be documented
 - _Observables_
 - _Forms_
 - _Pipes_
