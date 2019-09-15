@@ -50,6 +50,8 @@ _The following documentatiton has not been checked for errors yet._
 - Programmatic Navigation and Relative Paths
 - Passing Parameters to Routes and Fetching Parameters
 - Passing Query Parameters and Fragments
+- Retrieving Query Parameters and Fragments
+- Nested Child Routes
 - _more sections are being created_
 
 ***
@@ -59,9 +61,10 @@ _The following documentatiton has not been checked for errors yet._
 - _Observables_
 - _Forms_
 - _Pipes_
-- _Http Requsts_
+- _Http Requests_
 - _Authentication_
-- _Optimizations_
-- _NgModule_
-- _Deployment_
+- _Optimization_
+- _State Management - NgRx (Angular Redux)_
+- _Animations_
+- _Service Workers - Offline Functioning_
 
