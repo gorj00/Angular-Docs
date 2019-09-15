@@ -56,6 +56,9 @@ _The following documentatiton has not been checked for errors yet._
 - Redirecting
 - Redirecting with a Wildcard Route
 
+## [7 Guards](./07.%20Guards.md)
+- _more sections to come_
+
 ***
 ***
 
