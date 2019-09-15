@@ -52,7 +52,9 @@ _The following documentatiton has not been checked for errors yet._
 - Passing Query Parameters and Fragments
 - Retrieving Query Parameters and Fragments
 - Nested Child Routes
-- _more sections are being created_
+- Preserving Query Params Data When Navigating Away
+- Redirecting
+- Redirecting with a Wildcard Route
 
 ***
 ***
