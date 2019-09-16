@@ -57,6 +57,8 @@ _The following documentatiton has not been checked for errors yet._
 - Redirecting with a Wildcard Route
 
 ## [7 Guards](./07.%20Guards.md)
+- Protecting Routes - canActivate
+- Protecting Only Child Routes - canActivateChild
 - _more sections to come_
 
 ***
